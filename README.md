@@ -1,6 +1,6 @@
-# oXHR
+# oqXHR
 
-oXHR is a simple Oboe.js XHR wrapper with promises by Q optimized for use with your Node.js and React apps.
+oqXHR is a simple Oboe.js XHR wrapper with promises by Q optimized for use with your Node.js and React apps.
 
 ## Examples
 
@@ -12,7 +12,7 @@ var xhrData = {
         url: 'http://example.com/'
     };
 
-return oXHR(xhrData);
+return oqXHR(xhrData);
 ```
 
 Node.js
@@ -24,7 +24,7 @@ exports.getExample = function (req, res) {
         url: 'http://example.com/'
     };
 
-    oXHR(xhrData)
+    oqXHR(xhrData)
         .then(function (payload) {
             res.send(payload);
         })
@@ -41,7 +41,7 @@ The easiest way to get started is to add the following to your `package.json` de
 ```js
 {
     "dependencies": {
-        "oxhr": "git+ssh://git@github.com:thisiskeith/oXHR.git",
+        "oqXHR": "git+ssh://git@github.com:thisiskeith/oqXHR.git",
     }
 }
 ```
@@ -51,6 +51,5 @@ npm install
 ```
 Require in your application
 ```
-var oXHR = require('oxhr');
+var oqXHR = require('oboe-q');
 ```
-

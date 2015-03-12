@@ -1,21 +1,21 @@
 {
-  "name": "oxhr",
-  "version": "0.1.0",
-  "description": "Oboe.js XHR wrapper with promises by Q",
-  "main": "oXHR.js",
+  "name": "oboe-q",
+  "version": "0.1.1",
+  "description": "Oboe.js XHR wrapper with promises",
+  "main": "oqXHR.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thisiskeith/oXHR.git"
+    "url": "git://github.com/thisiskeith/oqXHR.git"
   },
   "author": "Keith Hansen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thisiskeith/oXHR/issues"
+    "url": "https://github.com/thisiskeith/oqXHR/issues"
   },
-  "homepage": "https://github.com/thisiskeith/oXHR",
+  "homepage": "https://github.com/thisiskeith/oqXHR",
   "dependencies": {
     "oboe": "^2.1.1",
     "q": "^1.2.0"

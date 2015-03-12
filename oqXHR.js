@@ -3,7 +3,7 @@
 var oboe = require('oboe');
 var Q = require('q');
 
-function oXHR(data) {
+function oqXHR(data) {
 
     if (typeof data !== "object") {
         throw new Error('data is undefined');
@@ -44,4 +44,4 @@ function oXHR(data) {
     return defered.promise;
 }
 
-module.exports = oXHR;
+module.exports = oqXHR;
