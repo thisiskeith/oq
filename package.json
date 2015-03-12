@@ -1,7 +1,7 @@
 {
   "name": "oxhr",
   "version": "0.1.0",
-  "description": "Oboe.js XHR wrapper with promises",
+  "description": "Oboe.js XHR wrapper with promises by Q",
   "main": "oXHR.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
