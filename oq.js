@@ -14,7 +14,7 @@ function oq(data) {
     var xhrObj = {
             url: data.url,
             method: data.method || 'GET',
-            cached: data.cached || false,
+            cached: data.cached || true,
             withCredentials: data.withCredentials || false
         };
 
