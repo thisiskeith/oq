@@ -4,7 +4,22 @@ var oboe = require('oboe');
 var Q = require('q');
 
 function oqXHR(data) {
-
+    /**
+     * Compute XHRHeaders
+     * @param {Object} body
+     * @param {String} contentType
+     * @returns {{Object}}
+    */
+    function _getXHRHeaders(body, contentType) {
+        var cLength = JSON.stringify(body).length;
+    
+        return {
+            "Accept": "application/" + contentType,
+            "Content-Type": "application/" + contentType,
+            "Content-Length": cLength
+        };
+    }
+    
     if (typeof data !== "object") {
         throw new Error('data is undefined');
     }
@@ -19,8 +34,8 @@ function oqXHR(data) {
         };
 
     // Headers
-    if (data.headers) {
-        xhrObj.headers = data.headers;
+    if (data.contentType) {
+        xhrObj.headers = _getXHRHeaders(data.body, data.contentType);
     }
 
     // Body
