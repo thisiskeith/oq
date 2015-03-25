@@ -1,6 +1,6 @@
-# oq
+# oboe-q
 
-oq is a simple Oboe.js XHR wrapper with promises by Q optimized for use with your Node.js and React apps.
+oboe-q is a simple Oboe.js XHR wrapper with promises by Q optimized for use with your Node.js and React apps.
 
 ## Examples
 
@@ -37,17 +37,9 @@ exports.getExample = function (req, res) {
 
 ## Installation
 
-The easiest way to get started is to add the following to your `package.json` dependencies
-```js
-{
-    "dependencies": {
-        "oq": "git+ssh://git@github.com:thisiskeith/oq.git",
-    }
-}
-```
 Install the package
 ```js
-npm install
+npm install oboe-q --save
 ```
 Require in your application
 ```
