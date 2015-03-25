@@ -37,8 +37,8 @@ function oq(data) {
 
             defered.resolve(payload);
         })
-        .fail(function () {
-            defered.reject(new Error("Query failed"));
+        .fail(function (errorReport) {
+            defered.reject(new Error(errorReport));
         });
 
     return defered.promise;
