@@ -1,6 +1,6 @@
 {
   "name": "oboe-q",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Oboe.js XHR wrapper with promises by Q",
   "main": "oq.js",
   "scripts": {

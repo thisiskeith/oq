@@ -10,7 +10,7 @@ function oq(data) {
     }
 
     var defered = Q.defer();
-
+	var statusCode;
     var xhrObj = {
             url: data.url,
             method: data.method || 'GET',
@@ -29,11 +29,17 @@ function oq(data) {
     }
 
     oboe(xhrObj)
+		.start(function (status) {
+			statusCode = status;
+		})
         .done(function (payload) {
 
             if (data.callback) {
                 payload = data.callback(payload);
             }
+
+			// Inject status code
+			payload.statusCode = statusCode;
 
             defered.resolve(payload);
         })
@@ -45,3 +51,4 @@ function oq(data) {
 }
 
 module.exports = oq;
+
