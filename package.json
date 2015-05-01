@@ -1,6 +1,6 @@
 {
   "name": "oboe-q",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Oboe.js XHR wrapper with promises by Q",
   "main": "oq.js",
   "scripts": {
@@ -20,9 +20,5 @@
     "oboe": "^2.1.1",
     "q": "^1.2.0"
   },
-  "browserDependencies": {
-    "oboe": "^2.1.1",
-    "q": "^1.2.0"
-  }
-
+  "browserDependencies": {}
 }
